@@ -1,8 +1,9 @@
 {
-  "name": "bus-alarm",
-  "version": "0.1.0",
+  "name": "kookmin_alarm_app",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.21.0",
     "@shadcn/ui": "^0.0.4",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -12,14 +13,16 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",
     "react-scripts": "^5.0.1",
+    "rimraf": "^4.1.0",
+    "rollup-plugin-terser": "^11.0.1",
     "web-vitals": "^4.2.4",
     "webpack": "^5.98.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "flutter build web",
+    "start": "flutter build web",
+    "clean": "flutter clean",
+    "test": "flutter test"
   },
   "eslintConfig": {
     "extends": [
