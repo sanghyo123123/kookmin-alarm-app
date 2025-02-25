@@ -1,72 +1,42 @@
-<<<<<<< HEAD
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
+# Flutter 및 Dart 관련 파일 무시
+build/
 .flutter-plugins
 .flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
+.packages
+.pub-cache
+.dart_tool
+.idea
+.vscode
+*.iml
 
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-=======
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
+# 운영 체제 관련 파일 무시
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
+# 로그 파일 및 임시 파일 무시
+*.log
+*.tmp
+
+# Node.js 및 npm 관련 파일 무시 (웹 빌드 시 필요할 수 있음)
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> 8b0abc2590f29324a15640d51e25334772f9a907
-.vercel
+
+# Vercel 배포 시 필요한 예외 설정
+!build/web
+
+# macOS 관련 파일 무시
+*.DS_Store
+
+# Windows 관련 파일 무시
+*.exe
+*.dll
+*.pdb
+*.db
+
+# Linux 관련 파일 무시
+*.so
+
+# 기타 무시할 파일들
+*.lock
